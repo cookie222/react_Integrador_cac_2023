@@ -1,0 +1,34 @@
+.movie-grid {
+    /**display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+     padding: 40px;
+    justify-content: center;**/
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+@media(max-width:560px) {
+    .movie-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.movie-card_img {
+    border-radius: 10px;
+    background-color: azure;
+    width: 230px;
+    height: 345px;
+
+}
+
+.movie-card_img:hover {
+    box-shadow: 0 0 11px gray;
+    filter: grayscale(80%);
+}
+
+a {
+    text-decoration: none
+}
+
